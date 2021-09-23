@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle
+	xmlns="http://soap.sforce.com/2006/04/metadata"
+	fqn="exportCSV"
+>
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>analytics__Dashboard</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="analytics__Dashboard">
+            <hasStep>true</hasStep>
+            <property name="fileName" type="String" label="File Name" default="Lens Export" />
+            <property name="buttonName" type="String" label="Button Title" default="Export CSV" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
